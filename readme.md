@@ -25,4 +25,4 @@
 ![](http://ww1.sinaimg.cn/large/ced9506agy1fm2hosjtilj20af031q2s.jpg)
 
 #### 附注
-设计思想： 
+设计思想：[java 聊天室WeChat](http://www.cnblogs.com/Dyleaf/p/7955145.html) 
