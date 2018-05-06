@@ -1,0 +1,5 @@
+CREATE TABLE `ChatUser` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(10) DEFAULT NULL,
+  `password` varchar(10) DEFAULT NULL
+) 
