@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="dyleaf@localhost" uuid="1626095d-7f3f-404e-bac8-b34efcdbf6b8">
-      <database-info product="Microsoft SQL Server" version="10.00.1600" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.0 for SQL Server" driver-version="6.0.8112.100">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source name="wechat@localhost" uuid="80a5789a-fe3d-4b33-b7a1-6ba827a4c7d1">
+      <database-info product="MySQL" version="5.7.22-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
       </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <domain-auth>true</domain-auth>
-      <introspection-schemas>dyleaf:dbo</introspection-schemas>
-    </data-source>
-    <data-source name="dyleaf@localhost [2]" uuid="b1a7a973-1182-4e23-b92a-93137f65f83f">
-      <database-info product="Microsoft SQL Server" version="10.00.1600" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.0 for SQL Server" driver-version="6.0.8112.100">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>dyleafidea</user-name>
-      <introspection-schemas>dyleaf:dbo</introspection-schemas>
+      <user-name>root</user-name>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
   </component>
 </project>

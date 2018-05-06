@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: black;" stylesheets="@LoginViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dyleaf.Client.Login.LoginViewController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="hostname" textFill="#f89616" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="20.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="txtHostName" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="25.0" />
+         </GridPane.margin></TextField>
+      <Label rotate="-3.0" text="Wechat" textAlignment="JUSTIFY" textFill="#ee5d0e" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="33.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" top="15.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="textPassword" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <TextField fx:id="txtUsername" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets top="40.0" />
+         </GridPane.margin></TextField>
+      <Label nodeOrientation="RIGHT_TO_LEFT" text="用户名" textFill="#f89406" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="5.0" top="35.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Broadway" size="15.0" />
+         </font></Label>
+      <Label text="密码" textFill="#f79307" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fx:id="imageView" fitHeight="130.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <image>
+            <Image url="@image/usergroup.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_signIn" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: #f79307;" text="注册" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_login" mnemonicParsing="false" onAction="#logIn" style="-fx-background-color: #f79307;" text="登录" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="closeBtn" maxHeight="10.0" maxWidth="10.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="135.0" stylesheets="@LoginViewStyle.css" text="    " GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP" onAction="#minBtnAction">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets right="10.0" top="12.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="minimizeBtn" mnemonicParsing="false" text="          " GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP" onAction="#closeBtnAction">
+         <GridPane.margin>
+            <Insets right="15.0" top="15.0" />
+         </GridPane.margin></Button>
+   </children>
+</GridPane>
